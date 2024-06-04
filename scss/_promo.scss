@@ -1,0 +1,167 @@
+.promo {
+    background-image: url(../img/promo-bg.svg), linear-gradient(220deg, #b9d0f1 6.23%, #e1edf9 86.34%);
+    background-position: right center, center center;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    padding: 28px 0 32px;
+    &__title {
+        margin: 32px 0 24px;
+        max-width: 1040px;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        color: var(--bold);
+        span {
+            color: var(--accent);
+        }
+    }
+    &__subtitle {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--regular);
+        max-width: 834px;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+    &__about {
+        border-radius: 8px;
+        background-color: #fff;
+        padding: 32px;
+        display: grid;
+        grid-template-columns: 30.7% 1fr;
+        gap: 32px;
+        margin-bottom: 32px;
+        .btn_main, .btn_transparent {
+            width: 100%;
+        }
+        &__item1 {
+            display: flex;
+            flex-direction: column;
+            .wrapper_start {
+                flex-grow: 1;
+            }
+        }
+    }
+    &__win {
+        border-radius: 4px;
+        padding: 17px 24px;
+        background: var(--blue-light);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 133%;
+        text-align: center;
+        color: var(--accent);
+        margin-right: 21px;
+        span {
+            display: block;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 112%;
+        };
+
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        &__item {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding: 0 32px;
+            border-right: 1px solid #b9d1f2;
+            gap: 10px;
+            &:last-child {
+                border-right: none;
+            }
+           
+            .fs_16 {
+                margin: 0;
+                
+            }
+        }
+    }
+}
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    &_new {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 125%;
+        text-align: center;
+        color: var(--bold);
+    }
+    &_old {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-decoration: line-through;
+        text-align: left;
+        color: var(--grey-middle);
+    }
+}
+.yellow-block {
+    border-radius: 4px;
+    padding: 16px 24px;
+    background: #f4da7f;
+    font-weight: 400;
+    color: var(--regular);
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 150%;
+    margin-right: 31px;
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 24px;
+        top: 16px;
+        width: 20px;
+        height: 20px;
+        background: url(../img/icon-info.svg) no-repeat center/contain;
+    }
+    span {
+        display: block;
+        font-size: 20px;
+        line-height: 140%;
+        font-weight: 700;
+        color: var(--bold);
+    }
+}
+.light-blue-block {
+    border-radius: 4px;
+    padding: 16px 24px;
+    background: var(--bg);
+    font-weight: 400;
+    color: var(--regular);
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 150%;
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 24px;
+        top: 16px;
+        width: 20px;
+        height: 20px;
+        background: url(../img/icon-info.svg) no-repeat center/contain;
+    }
+    span {
+        display: block;
+        font-size: 20px;
+        line-height: 140%;
+        font-weight: 700;
+        color: var(--bold);
+    }
+}

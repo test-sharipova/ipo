@@ -1,0 +1,214 @@
+.tabs {
+    &__content {
+        display: none; /* по умолчанию прячем все блоки */
+        background-color: var(--bg);
+        padding-top: 104px;
+        &.active {
+            display: block; /* по умолчанию показываем нужный блок */
+        }
+    }
+    
+    &__caption {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 40px 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        
+        gap: 21px;
+        li {
+            height: 38px;
+            white-space: nowrap;
+            border-radius: 4px;
+            padding: 2px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--grey-light);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            color: var(--bold);
+            transition: color .3s, background-color .3s;
+            cursor: pointer;
+            &:hover {
+                background-color: var(--blue-light);
+                color: var(--accent);
+            }
+            &.active {
+                color: var(--white);
+                background-color: var(--accent);
+            }
+        }
+    }
+}
+  .about {
+    padding: 40px 0;
+    &__text {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+        &__text {
+            margin: 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: var(--regular);
+        }
+    }
+    &__blue-text {
+        margin: 0;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        color: var(--accent);
+    }
+    &__for {
+        padding: 104px 0 40px;
+        color: #fff;
+        .heading {
+            color: #fff;
+            margin-bottom: 12px;
+        }
+        .title {
+            text-align: center;
+        }
+       
+        &__wrapper {
+            margin-top: 48px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+        &__item {
+            border-radius: 4px;
+            padding: 32px;
+            background: var(--accent);
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 120%;
+            color: var(--white);
+            margin: 0 0 38px;
+        }
+        .fs_16 {
+            margin: 0;
+        }
+    }
+    &__tasks {
+        padding: 40px 0;
+        &__wrapper {
+            margin-top: 48px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+        .title {
+            text-align: center;
+        }
+        &__item {
+            border-radius: 4px;
+            background: var(--white);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: var(--regular);
+            padding: 32px 32px 32px 72px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 16px;
+                height: 11px;
+                display: block;
+                background: url(../img/icon-ckeck.svg) no-repeat center/contain;
+                left: 36px;
+                top: 38px;
+            }
+        }
+    }
+    &__career {
+        background: var(--accent);
+        padding: 104px 0 112px;
+        .title {
+            text-align: center;
+            color:#fff;
+        }
+        &__subtitle {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: center;
+            color: var(--white);
+        }
+        &__wrapper {
+            margin-top: 48px;
+            display: grid;
+            gap: 32px;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+        &__item {
+            border: 1px solid var(--white);
+            border-radius: 4px;
+            background: #bfd6f4;
+            padding: 24px 32px;
+            margin-bottom: 32px;
+            position: relative;
+            .heading {
+                margin-bottom: 12px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &__text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: var(--regular);
+                margin: 0;
+            }
+        }
+        &__num {
+            position: absolute;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 140%;
+            color: var(--accent);
+            width: 48px;
+            height: 48px;
+            border-radius: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 32px;
+            top: -24px;
+        }
+        &__img {
+            background: url(../img/about-career-img.png) no-repeat bottom center/contain;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 32px;
+            border: 1px solid var(--white);
+            border-radius: 8px;
+            &-text {
+                margin: 0 0 24px 0;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 140%;
+                color: var(--white);
+                
+            }
+            .btn_white {
+                width: 100%;
+            }
+        }
+    }
+    
+  }

@@ -1,0 +1,104 @@
+header {
+    padding: 16px 0;
+}
+.header {
+    &__wrapper {
+        width: 90%;
+        max-width: 1216px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 31px;
+    }
+    &__wrap {
+        flex-grow: 1;
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            gap: 29px;
+            margin-bottom: 16px;
+        }
+        &-bottom {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__number {
+        text-decoration: none;
+        display: block;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 118%;
+        color: var(--accent);
+        transition: opacity .3s;
+        &:hover {
+            opacity: .8;
+        }
+    }
+    &__search {
+        position: relative;
+        height: 48px;
+        flex-grow: 1;
+        input {
+            width: 100%;
+            border-radius: 4px;
+            height: 100%;
+            background: var(--bg);
+            border: none;
+            padding: 12px 48px;
+            margin: 0;
+            display: block;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 100%;
+            top: 0;
+            left: 12px;
+            cursor: pointer;
+            background: url(../img/icon-search.svg) no-repeat center/contain;
+        }
+        
+    }
+
+}
+.menu {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    height: 100%;
+    
+    &__link {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--bold);
+        text-decoration: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &::after {
+            content: '';
+            width: 0%;
+            height: 1px;
+            background-color: var(--bold);
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: width .3s;
+        }
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
