@@ -308,6 +308,34 @@ details summary::-webkit-details-marker {
         text-decoration-color: var(--grey-middle);
     }
 }
+.phone {
+   input {
+    width: 100%;
+   }
+    &__wrap {
+        position: relative;
+        &::after {
+            content: '+7';
+            position: absolute;
+            top: 50%;
+            left: 51px;
+            transform: translateY(-50%);
+            display: block;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 16px;
+            transform: translateY(-50%);
+            display: block;
+            background: url(../img/flag.png) no-repeat center/cover;
+            width: 16px;
+            height: 16px;
+        }
+    }
+    
+}
 
 @import '_header.scss';
 @import '_promo.scss';
