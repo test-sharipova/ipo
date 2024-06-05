@@ -1,0 +1,52 @@
+.cost {
+    padding: 36px 0 112px;
+    &__wrapper {
+        border-radius: 8px;
+        background: var(--bg);
+        padding: 48px 56px 56px;
+    }
+    .title {
+        max-width: 480px;
+    }
+    &__wrap {
+        margin-top: 36px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 32px;
+        .btn_main {
+            display: block;
+            width: fit-content;
+            justify-self: start;
+            align-self: end;
+            
+        }
+    }
+    &__item {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        color: var(--bold);
+        padding: 24px 36px;
+        border-top: 1px solid var(--grey-light);
+        border-bottom: 1px solid var(--grey-light);
+        position: relative;
+        a {
+            color: inherit;
+            text-decoration: none;
+            &:hover {
+                opacity: .8;
+            }
+        }
+        &::before {
+            content: '';
+            width: 24px;
+            height: 24px;
+            display: block;
+            background: url(../img/icon-ckeck.svg) no-repeat center/contain;
+            position: absolute;
+            left: 0;
+            top: 24px;
+        }
+    }
+
+}

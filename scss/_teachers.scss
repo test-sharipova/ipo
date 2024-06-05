@@ -1,0 +1,74 @@
+.teachers {
+    padding: 0 0 112px;
+    .title {
+        text-align: center;
+    }
+    &__slider {
+        margin-top: 52px;
+        .slick-arrow {
+            position: absolute;
+            top: -90px;
+            
+            cursor: pointer;
+            font-size: 1px;
+            color: transparent;
+            border-radius: 100%;
+            border: 1px solid var(--accent);
+            background-color: transparent;
+            width: 40px;
+            height: 40px;
+            
+            z-index: 10;
+            transition: background-color .3s;
+            &:hover {
+                background-color: var(--accent);
+                &::before {
+                    background-color: #fff;
+                }
+                
+            }
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                mask: url(../img/icon-arrow.svg) no-repeat center/cover;
+                width: 13px;
+                height: 7px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(90deg);
+                background-color: var(--accent);
+            }
+            }
+            .slick-prev {
+                right: 56px;
+                &::before {
+                    transform: translate(-50%, -50%) rotate(-90deg);
+                }
+            }
+            .slick-next {
+                right: 0;
+                
+            }
+    }
+    &__photo {
+        width: 280px;
+        height: 360px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 16px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--regular);
+        margin: 12px 0 0;
+    }
+}

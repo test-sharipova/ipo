@@ -38,7 +38,7 @@ details summary::-webkit-details-marker {
   }
 //btns
 .btn_main {
-    
+    text-decoration: none;
     border-radius: 4px;
     padding: 12px 24px;
     background-color: var(--accent);
@@ -312,3 +312,5 @@ details summary::-webkit-details-marker {
 @import '_header.scss';
 @import '_promo.scss';
 @import '_about.scss';
+@import '_teachers.scss';
+@import "_cost.scss";

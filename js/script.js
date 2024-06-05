@@ -40,10 +40,18 @@ $('.about__licens__slider-nav').slick({
   focusOnSelect: true,
   
 });
-
+//слайдер порядок поступления
 $('.about__poryadok__slider').slick({
   infinite: false,
   slidesToShow: 3,
+  slidesToScroll: 1,
+
+});
+
+//слайдер Преподаватели и эксперты курса
+$('.teachers__slider').slick({
+  infinite: true,
+  slidesToShow: 4,
   slidesToScroll: 1,
 
 });
