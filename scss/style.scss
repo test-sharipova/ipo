@@ -17,6 +17,25 @@ input, summary, details, button {
     max-width: 1216px;
     margin: 0 auto;
 }
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+details summary::-webkit-details-marker {
+    display: none
+  }
+  details > summary {
+    list-style: none;
+  }
+  details {
+    summary::marker { 
+      content: none;
+    }
+  }
 //btns
 .btn_main {
     
@@ -208,7 +227,70 @@ input, summary, details, button {
         }
     }
 }
-
+.form {
+    &__input {
+        background: var(--bg);
+        height: 48px;
+        padding: 12px 16px;
+        border: 1px solid var(--grey-light);
+        border-radius: 4px;
+        font-size: 16px;
+        &:focus {
+            border: 1px solid var(--accent);
+            outline: 3px solid var(--blue-light);
+        }
+    }
+}
+.policy-check-input {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    margin: -1px;
+}
+.policy-check {
+    display: block;
+    border: 1px solid var(--accent);
+    border-radius: 2px;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    cursor: pointer;
+    margin-top: 2px;
+    
+}
+.policy-check-input:checked ~ .policy-check-mark {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    &::after {
+        content: '';
+        display: block;
+        background: url(../img/icon-ckeck.svg) no-repeat center/contain;
+        width: 10px;
+        height: 7px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.policy__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+    color: var(--grey-middle);
+    margin-left: 8px;
+    a {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: var(--accent);
+        text-decoration-color: var(--grey-middle);
+    }
+}
 
 @import '_header.scss';
 @import '_promo.scss';

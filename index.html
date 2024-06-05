@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
     <title>Институт профессионального образования</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
 
     <script defer src="js/jquery-3.6.3.min.js"></script>
@@ -131,16 +138,16 @@
   
                    <div class="container">
                     <ul class="tabs__caption">
-                        <li class="active">Описание</li>
-                        <li>Учебный план</li>
-                        <li>Диплом</li>
+                        <li >Описание</li>
+                        <li >Учебный план</li>
+                        <li class="active">Диплом</li>
                         <li>Требования к поступлению</li>
                         <li>Отзывы о программе</li>
                         <li>Актуальные вопросы</li>
                       </ul>
                    </div>
                     
-                    <div class="tabs__content active">
+                    <div class="tabs__content">
                      <div class="container">
                         <div class="about__text">
                             <h1 class="title">
@@ -247,21 +254,483 @@
                                 <h2 class="title">
                                     Чему вы научитесь
                                 </h2>
-                                
+                                <div class="about__learn__accord">
+                                    <details open>
+                                        <summary>
+                                            Оценке психологического развития человека
+                                        </summary>
+                                       
+                                            <ul class="about__learn__list">
+                                                <li>анализу протекания основных этапов развития и возрастных кризисов;</li>
+                                                <li>определению зон риска и возможностей развития.</li>
+                                            </ul>
+                                      
+                                    </details>
+                                    <details>
+                                        <summary>
+                                            Основам социальной и педагогической психологии
+                                        </summary>
+                                        
+                                            <ul class="about__learn__list">
+                                                <li>анализу протекания основных этапов развития и возрастных кризисов;</li>
+                                                <li>определению зон риска и возможностей развития.</li>
+                                            </ul>
+                                        
+                                    </details>
+                                    <details>
+                                        <summary>
+                                            Психологической диагностике
+                                        </summary>
+                                        
+                                        <ul class="about__learn__list">
+                                            <li>анализу протекания основных этапов развития и возрастных кризисов;</li>
+                                            <li>определению зон риска и возможностей развития.</li>
+                                        </ul>
+                                        
+                                    </details>
+                                    <details>
+                                        <summary>
+                                            Основам психологического консультирования и  психологической коррекции
+                                        </summary>
+                                       
+                                            <ul class="about__learn__list">
+                                                <li>анализу протекания основных этапов развития и возрастных кризисов;</li>
+                                                <li>определению зон риска и возможностей развития.</li>
+                                            </ul>
+                                       
+                                    </details>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
                     <div class="tabs__content">
-                      Содержимое второго блока
+                        <div class="container">
+                            <div class="about__learn about__programm">
+                                <h2 class="title">
+                                    Программа курса
+                                </h2>
+                                <div class="about__programm__info">
+                                    <p class="about__programm__info-text about__programm__info-text-form">очно-заочная форма</p>
+                                    <p class="about__programm__info-text about__programm__info-text-time">65 недель (15 мес.)</p>
+                                    <p class="about__programm__info-text about__programm__info-text-test">11 тестов + междисциплинарный экзамен</p>
+                                </div>
+                                <div class="about__learn__accord">
+                                    <details open class="about__programm__details">
+                                        <summary>
+                                            1. Дефектология
+                                        </summary>
+                                       <div class="about__programm__content">
+                                            <div class="wrapper_start">
+                                                <div class="about__programm__small">
+                                                    18 часов
+                                                </div>
+                                                <div class="about__programm__small">
+                                                    Тест / Оценка
+                                                </div>
+                                            </div>
+                                            Этапы развития психологии. Определение психологии как науки. Предмет изучения. Задачи психологии. Методы.
+                                       </div>
+                                      
+                                    </details>
+                                    <details class="about__programm__details">
+                                        <summary>
+                                            2. Возрастная психология
+                                        </summary>
+                                        <div class="about__programm__content">
+                                            <div class="wrapper_start">
+                                                <div class="about__programm__small">
+                                                    18 часов
+                                                </div>
+                                                <div class="about__programm__small">
+                                                    Тест / Оценка
+                                                </div>
+                                            </div>
+                                            Этапы развития психологии. Определение психологии как науки. Предмет изучения. Задачи психологии. Методы.
+                                       </div>
+                                        
+                                    </details>
+                                    <details class="about__programm__details">
+                                        <summary>
+                                            3. Педагогическая психология
+                                        </summary>
+                                        
+                                        <div class="about__programm__content">
+                                            <div class="wrapper_start">
+                                                <div class="about__programm__small">
+                                                    18 часов
+                                                </div>
+                                                <div class="about__programm__small">
+                                                    Тест / Оценка
+                                                </div>
+                                            </div>
+                                            Этапы развития психологии. Определение психологии как науки. Предмет изучения. Задачи психологии. Методы.
+                                       </div>
+                                        
+                                    </details>
+                                    <details class="about__programm__details">
+                                        <summary>
+                                            4. Нейропсихология
+                                        </summary>
+                                        <div class="about__programm__content">
+                                            <div class="wrapper_start">
+                                                <div class="about__programm__small">
+                                                    18 часов
+                                                </div>
+                                                <div class="about__programm__small">
+                                                    Тест / Оценка
+                                                </div>
+                                            </div>
+                                            Этапы развития психологии. Определение психологии как науки. Предмет изучения. Задачи психологии. Методы.
+                                       </div>
+                                       
+                                    </details>
+                                    <details class="about__programm__details">
+                                        <summary>
+                                            1. Дефектология
+                                        </summary>
+                                       <div class="about__programm__content">
+                                            <div class="wrapper_start">
+                                                <div class="about__programm__small">
+                                                    18 часов
+                                                </div>
+                                                <div class="about__programm__small">
+                                                    Тест / Оценка
+                                                </div>
+                                            </div>
+                                            Этапы развития психологии. Определение психологии как науки. Предмет изучения. Задачи психологии. Методы.
+                                       </div>
+                                      
+                                    </details>
+                                    <details class="about__programm__details">
+                                        <summary>
+                                            2. Возрастная психология
+                                        </summary>
+                                        <div class="about__programm__content">
+                                            <div class="wrapper_start">
+                                                <div class="about__programm__small">
+                                                    18 часов
+                                                </div>
+                                                <div class="about__programm__small">
+                                                    Тест / Оценка
+                                                </div>
+                                            </div>
+                                            Этапы развития психологии. Определение психологии как науки. Предмет изучения. Задачи психологии. Методы.
+                                       </div>
+                                        
+                                    </details>
+                                    <details class="about__programm__details">
+                                        <summary>
+                                            3. Педагогическая психология
+                                        </summary>
+                                        
+                                        <div class="about__programm__content">
+                                            <div class="wrapper_start">
+                                                <div class="about__programm__small">
+                                                    18 часов
+                                                </div>
+                                                <div class="about__programm__small">
+                                                    Тест / Оценка
+                                                </div>
+                                            </div>
+                                            Этапы развития психологии. Определение психологии как науки. Предмет изучения. Задачи психологии. Методы.
+                                       </div>
+                                        
+                                    </details>
+                                    <details class="about__programm__details">
+                                        <summary>
+                                            4. Нейропсихология
+                                        </summary>
+                                        <div class="about__programm__content">
+                                            <div class="wrapper_start">
+                                                <div class="about__programm__small">
+                                                    18 часов
+                                                </div>
+                                                <div class="about__programm__small">
+                                                    Тест / Оценка
+                                                </div>
+                                            </div>
+                                            Этапы развития психологии. Определение психологии как науки. Предмет изучения. Задачи психологии. Методы.
+                                       </div>
+                                       
+                                    </details>
+                                    <details class="about__programm__details">
+                                        <summary>
+                                            3. Педагогическая психология
+                                        </summary>
+                                        
+                                        <div class="about__programm__content">
+                                            <div class="wrapper_start">
+                                                <div class="about__programm__small">
+                                                    18 часов
+                                                </div>
+                                                <div class="about__programm__small">
+                                                    Тест / Оценка
+                                                </div>
+                                            </div>
+                                            Этапы развития психологии. Определение психологии как науки. Предмет изучения. Задачи психологии. Методы.
+                                       </div>
+                                        
+                                    </details>
+                                    <details class="about__programm__details">
+                                        <summary>
+                                            4. Нейропсихология
+                                        </summary>
+                                        <div class="about__programm__content">
+                                            <div class="wrapper_start">
+                                                <div class="about__programm__small">
+                                                    18 часов
+                                                </div>
+                                                <div class="about__programm__small">
+                                                    Тест / Оценка
+                                                </div>
+                                            </div>
+                                            Этапы развития психологии. Определение психологии как науки. Предмет изучения. Задачи психологии. Методы.
+                                       </div>
+                                       
+                                    </details>
+                                    <button type="button" class="btn_main about__programm__more">Загрузить еще</button>
+                                </div>
+                            </div>
+                            <div class="about__plan">
+                                <div class="about__plan__wrapper">
+                                    <div class="about__plan__content">
+                                        <h2 class="title">Подтверждение ваших навыков</h2>
+                                        <p class="about__plan__text">
+                                            Абитуриенты, завершившие обучение, получают Диплом о профессиональной переподготовки с присвоением квалификации «Учитель-логопед (логопед) (профиль: нарушения речи)» и бессрочным правом ведения профессиональной деятельности.
+                                        </p>
+                                        <button type="button" class="btn_transparent">Посмотреть диплом</button>
+                                    </div>
+                                    <img class="about__plan__img" src="img/about-plan-img.png" alt="дипломы">
+                                </div>
+                                
+                            </div>
+                        </div>
+                            <div class="about__form">
+                                <div class="container">
+                                    <div class="about__form__wrapper">
+                                        <h2 class="title">
+                                            Оставьте заявку на обучение или бесплатную консультацию
+                                        </h2>
+                                        <form action="#" class="about__form__form">
+                                            <input type="text" placeholder="ФИО*" class="form__input" required>
+                                            <input type="text" class="form__input phone">
+                                            <input type="email" class="form__input" placeholder="Email*">
+                                            <div class="wrapper_start">
+                                                <label for="policy-check" class="policy-check">
+                                                    <input type="checkbox" id="policy-check" class="policy-check-input" required>
+                                                    <span class="policy-check-mark"></span>
+                                                </label>
+                                                
+                                                <p class="policy__text">
+                                                    Нажимая на кнопку, Вы соглашаетесь с <a href="#">политикой в области обработки и защиты персональных данных Института профессионального образования».</a>
+                                                </p>
+                                            </div>
+                                            <button type="submit" class="btn_main">Отправить</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="about__learn">
+                                    <h2 class="title">
+                                        Чему вы научитесь
+                                    </h2>
+                                    <div class="about__learn__accord">
+                                        <details open>
+                                            <summary>
+                                                Оценке психологического развития человека
+                                            </summary>
+                                           
+                                                <ul class="about__learn__list">
+                                                    <li>анализу протекания основных этапов развития и возрастных кризисов;</li>
+                                                    <li>определению зон риска и возможностей развития.</li>
+                                                </ul>
+                                          
+                                        </details>
+                                        <details>
+                                            <summary>
+                                                Основам социальной и педагогической психологии
+                                            </summary>
+                                            
+                                                <ul class="about__learn__list">
+                                                    <li>анализу протекания основных этапов развития и возрастных кризисов;</li>
+                                                    <li>определению зон риска и возможностей развития.</li>
+                                                </ul>
+                                            
+                                        </details>
+                                        <details>
+                                            <summary>
+                                                Психологической диагностике
+                                            </summary>
+                                            
+                                            <ul class="about__learn__list">
+                                                <li>анализу протекания основных этапов развития и возрастных кризисов;</li>
+                                                <li>определению зон риска и возможностей развития.</li>
+                                            </ul>
+                                            
+                                        </details>
+                                        <details>
+                                            <summary>
+                                                Основам психологического консультирования и  психологической коррекции
+                                            </summary>
+                                           
+                                                <ul class="about__learn__list">
+                                                    <li>анализу протекания основных этапов развития и возрастных кризисов;</li>
+                                                    <li>определению зон риска и возможностей развития.</li>
+                                                </ul>
+                                           
+                                        </details>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
 
-                    <div class="tabs__content">
-
+                    <div class="tabs__content ">
+                        <div class="container">
+                            <div class="about__docs">
+                                <h2 class="title">
+                                    Ваши будущие документы 
+                                </h2>
+                                <div class="about__docs__subtitle">
+                                    Все наши программы лицензированы, а дипломы имеют
+                                    международные приложения, поэтому они ценятся‚ клиентами и профессиональным сообществом как в
+                                    России, так и за рубежом!
+                                </div>
+                                <div class="about__docs__wrapper">
+                                    <div class="about__docs__item">
+                                        <img src="img/doc1.jpg" alt="документ">
+                                    </div>
+                                    <div class="about__docs__item">
+                                        <img src="img/doc2.jpg" alt="документ">
+                                    </div>
+                                </div>
+                                <button type="button" class="btn_main">Уведомить о представлении лицензии №456465</button>
+                            </div>
+                            <div class="about__licens">
+                                <h2 class="title">
+                                    Лицензия на осуществление образовательной деятельности
+                                </h2>
+                                
+                                <div class="about__licens__wrapper">
+                                    <div class="about__licens__slider">
+                                        <div class="about__licens__slider-for">
+                                            <div>
+                                                <img src="img/certificate.jpg" alt="сертификат" width="333" height="478">
+                                            </div>
+                                            <div>
+                                                <img src="img/certificate_2.jpg" alt="сертификат" width="333" height="478">
+                                            </div>
+                                        </div>
+                                        <div class="about__licens__slider-nav">
+                                            <div>
+                                                <img src="img/certificate.jpg" alt="сертификат" width="88" height="124">
+                                            </div>
+                                            <div>
+                                                <img src="img/certificate_2.jpg" alt="сертификат">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="about__licens__info">
+                                        <div class="about__licens__item">
+                                            <div class="about__licens__item__title">
+                                                Срок действия
+                                            </div>
+                                            <div class="about__licens__item__text">
+                                                бессрочная
+                                            </div>
+                                        </div>
+                                        <div class="about__licens__item">
+                                            <div class="about__licens__item__title">
+                                                Регистрационный номер лицензии 
+                                            </div>
+                                            <div class="about__licens__item__text">
+                                                № Л035-01298-77/00180468
+                                            </div>
+                                        </div>
+                                        <div class="about__licens__item">
+                                            <div class="about__licens__item__title">
+                                                Дата предоставления лицензии
+                                            </div>
+                                            <div class="about__licens__item__text">
+                                                30 декабря 2020 г.
+                                            </div>
+                                        </div>
+                                        <div class="about__licens__item">
+                                            <div class="about__licens__item__title">
+                                                Скачать выписку из реестра лицензий
+                                            </div>
+                                            <div class="about__licens__item__text">
+                                                <a href="#">Скачать</a>
+                                            </div>
+                                        </div>
+                                        <div class="about__license__item">
+                                            <div class="about__licens__item__title">
+                                                Самостоятельно проверить лицензию в реестре Рособрнадзора
+                                            </div>
+                                            <div class="about__licens__item__text">
+                                                <a href="islod.obrnadzor.gov.ru/rlic" target="_blank">islod.obrnadzor.gov.ru/rlic</a>
+                                            </div>
+                                        </div>
+                                        <div class="about__licens__item">
+                                            <div class="about__licens__item__title">
+                                                ОГРН
+                                            </div>
+                                            <div class="about__licens__item__text">
+                                                1157700006683
+                                            </div>
+                                        </div>
+                                        <div class="about__licens__item">
+                                            <div class="about__licens__item__title">
+                                                ИНН организации
+                                            </div>
+                                            <div class="about__licens__item__text">
+                                                7724318601
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="tabs__content">
-
+                    <div class="tabs__content active">
+                        <div class="container">
+                           <div class="about__treb">
+                            <h2 class="title">
+                                Требования к слушателям
+                            </h2>
+                            <div class="about__treb__wrapper">
+                                <div class="about__treb__item about__treb__item1">
+                                    <p class="heading">
+                                        Обратите внимание!
+                                    </p>
+                                    <p class="about__treb__text">
+                                        Принимаются лица от 18 лет.
+                                        <br><br>
+                                        Для поступления достаточно прислать <span>скан-копии или фотографии документов</span>, а также осуществить удаленное заключение договора. Копии документов должны быть чёткими, разборчивыми, легко читаемыми.
+                                    </p>
+                                </div>
+                                <div class="about__treb__item about__treb__item2">
+                                    <p class="about__treb__item__title">
+                                        Граждане Российской Федерации предоставляют заявление о приёме на обучение и копии следующих документов:
+                                    </p>
+                                    <ul class="about__treb__list">
+                                        <li>
+                                            Паспорта;
+                                        </li>
+                                        <li>Страхового номера индивидуального лицевого счёта (СНИЛС);
+                                        </li>
+                                        <li>Диплома о высшем или среднем профессиональном образовании;
+                                        </li>
+                                        <li>При поступлении на основе неоконченного образования – справки об обучении из организации высшего или среднего профессионального образования, в которой обучается студент;
+                                        </li>
+                                        <li>Документа, подтверждающего факт изменения фамилии, имени или отчества (если необходимо).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                           </div>
+                        </div>
                     </div>
 
                     <div class="tabs__content">
