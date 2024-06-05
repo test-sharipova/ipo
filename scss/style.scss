@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
 }
-input, summary, details, button {
+input, summary, details, button, textarea {
     font-family: inherit;
 }
 
@@ -160,6 +160,9 @@ details summary::-webkit-details-marker {
 .lh_133 {
     line-height: 133%;
 }
+.lh_150 {
+    line-height: 150%;
+}
 .lh_155 {
     line-height: 155%;
 }
@@ -177,6 +180,7 @@ details summary::-webkit-details-marker {
 .mb_32 {
     margin-bottom: 32px;
 }
+
 
 //wrappers 
 .wrapper {
@@ -235,6 +239,19 @@ details summary::-webkit-details-marker {
         border: 1px solid var(--grey-light);
         border-radius: 4px;
         font-size: 16px;
+        &:focus {
+            border: 1px solid var(--accent);
+            outline: 3px solid var(--blue-light);
+        }
+    }
+    &__textarea {
+        border: 1px solid var(--grey-light);
+        border-radius: 4px;
+        background: var(--bg);
+        resize: none;
+        width: 100%;
+        padding: 12px 16px;
+        height: 168px;
         &:focus {
             border: 1px solid var(--accent);
             outline: 3px solid var(--blue-light);

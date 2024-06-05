@@ -40,3 +40,10 @@ $('.about__licens__slider-nav').slick({
   focusOnSelect: true,
   
 });
+
+$('.about__poryadok__slider').slick({
+  infinite: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+
+});
