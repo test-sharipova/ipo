@@ -1,0 +1,50 @@
+.pay {
+    padding: 36px 0 112px;
+    .title {
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 48px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+    &__item {
+        border-radius: 8px;
+        background: var(--bg);
+        padding: 32px;
+        .heading {
+            margin-bottom: 16px;
+        }
+
+    }
+    &__logo {
+        width: 138px;
+        height: 36px;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    &__list {
+        margin: 16px 0 12px;
+        list-style-type: none;
+        padding: 0px;
+        li {
+            padding-left: 36px;
+            position: relative;
+            margin-bottom: 15px;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                background-color: var(--accent);
+                top: 8px;
+                left: 8px;
+                border-radius: 100%;
+            }
+        }
+    }
+}

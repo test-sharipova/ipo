@@ -137,6 +137,7 @@ details summary::-webkit-details-marker {
 }
 .fs_16 {
     font-size: 16px;
+    
 }
 
 //titles
@@ -170,6 +171,11 @@ details summary::-webkit-details-marker {
     color: var(--grey-middle);
 }
 
+//font-weight
+.fw_400 {
+    font-weight: 400;
+    color: var(--regular);
+}
 //margins
 .m_0 {
     margin: 0;
@@ -295,7 +301,7 @@ details summary::-webkit-details-marker {
     }
 }
 .policy__text {
-    margin: 0;
+    margin: 0 0 4px;
     font-weight: 400;
     font-size: 12px;
     line-height: 133%;
@@ -309,9 +315,7 @@ details summary::-webkit-details-marker {
     }
 }
 .phone {
-   input {
-    width: 100%;
-   }
+   
     &__wrap {
         position: relative;
         &::after {
@@ -333,6 +337,9 @@ details summary::-webkit-details-marker {
             width: 16px;
             height: 16px;
         }
+        input {
+            width: 100%;
+           }
     }
     
 }
@@ -342,3 +349,5 @@ details summary::-webkit-details-marker {
 @import '_about.scss';
 @import '_teachers.scss';
 @import "_cost.scss";
+@import '_learn.scss';
+@import '_pay.scss';

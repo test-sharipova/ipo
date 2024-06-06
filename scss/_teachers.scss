@@ -7,7 +7,7 @@
         margin-top: 52px;
         .slick-arrow {
             position: absolute;
-            top: -90px;
+            top: -96px;
             
             cursor: pointer;
             font-size: 1px;
@@ -15,8 +15,8 @@
             border-radius: 100%;
             border: 1px solid var(--accent);
             background-color: transparent;
-            width: 40px;
-            height: 40px;
+            width: 48px;
+            height: 48px;
             
             z-index: 10;
             transition: background-color .3s;
@@ -41,7 +41,7 @@
             }
             }
             .slick-prev {
-                right: 56px;
+                right: 64px;
                 &::before {
                     transform: translate(-50%, -50%) rotate(-90deg);
                 }
