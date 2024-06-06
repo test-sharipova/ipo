@@ -283,7 +283,7 @@ details summary::-webkit-details-marker {
     margin-top: 2px;
     
 }
-.policy-check-input:checked ~ .policy-check-mark {
+.policy-check-input:checked + .policy-check-mark {
     width: 100%;
     height: 100%;
     position: relative;
@@ -343,6 +343,27 @@ details summary::-webkit-details-marker {
     }
     
 }
+.list-round {
+    margin: 16px 0 12px;
+    list-style-type: none;
+    padding: 0px;
+    li {
+        padding-left: 36px;
+        position: relative;
+        margin-bottom: 15px;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent);
+            top: 8px;
+            left: 8px;
+            border-radius: 100%;
+        }
+    }
+}
 
 @import '_header.scss';
 @import '_promo.scss';
@@ -351,3 +372,5 @@ details summary::-webkit-details-marker {
 @import "_cost.scss";
 @import '_learn.scss';
 @import '_pay.scss';
+@import '_order.scss';
+@import "_assessments.scss";

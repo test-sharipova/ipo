@@ -65,3 +65,10 @@ let maskOptions = {
 for (let i = 0; i < element.length; i++) {
     let mask = IMask(element[i], maskOptions);
 }
+
+//слайдер Студенты довольны обучением
+$('.assessments__slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  
+});

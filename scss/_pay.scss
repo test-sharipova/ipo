@@ -1,5 +1,5 @@
 .pay {
-    padding: 36px 0 112px;
+    padding: 36px 0 108px;
     .title {
         text-align: center;
     }
@@ -26,25 +26,5 @@
             max-height: 100%;
         }
     }
-    &__list {
-        margin: 16px 0 12px;
-        list-style-type: none;
-        padding: 0px;
-        li {
-            padding-left: 36px;
-            position: relative;
-            margin-bottom: 15px;
-            &::before {
-                content: '';
-                display: block;
-                position: absolute;
-                width: 8px;
-                height: 8px;
-                background-color: var(--accent);
-                top: 8px;
-                left: 8px;
-                border-radius: 100%;
-            }
-        }
-    }
+    
 }
