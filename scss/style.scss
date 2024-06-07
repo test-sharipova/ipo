@@ -46,9 +46,12 @@ details summary::-webkit-details-marker {
     border: none;
     font-weight: 700;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 100%;
     text-align: center;
     color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: background-color .3s;
     &:hover {
         background-color: #4a6893;
@@ -365,6 +368,10 @@ details summary::-webkit-details-marker {
         }
     }
 }
+.body_fixed {
+    position: fixed;
+    width: 100%;
+}
 
 @import '_header.scss';
 @import '_promo.scss';
@@ -376,3 +383,4 @@ details summary::-webkit-details-marker {
 @import '_order.scss';
 @import '_assessments.scss';
 @import '_programm.scss';
+@import '_media.scss';

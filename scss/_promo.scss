@@ -78,7 +78,9 @@
             &:last-child {
                 border-right: none;
             }
-           
+           .heading {
+            white-space: nowrap;
+           }
             .fs_16 {
                 margin: 0;
                 
@@ -97,6 +99,7 @@
         line-height: 125%;
         text-align: center;
         color: var(--bold);
+        white-space: nowrap;
     }
     &_old {
         font-family: var(--second-family);
