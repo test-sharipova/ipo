@@ -26,8 +26,9 @@
     &__percent {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 24px 66px;
+        gap: 0px 66px;
         margin-bottom: 12px;
+        margin-top: 92px;
         &__item {
             font-weight: 700;
             font-size: 40px;
@@ -47,7 +48,7 @@
         border-radius: 8px;
         background: var(--bg);
         padding: 40px 40px 0;
-        width: 45%;
+        width: 49%;
         position: absolute;
         top: 0;
         right: 0;
