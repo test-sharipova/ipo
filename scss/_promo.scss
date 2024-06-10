@@ -122,6 +122,8 @@
     line-height: 150%;
     margin-right: 31px;
     position: relative;
+    box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+    animation: pulse 2s infinite;
     &::after {
         content: '';
         display: block;
@@ -140,6 +142,20 @@
         color: var(--bold);
     }
 }
+@keyframes pulse {
+    0% {
+     
+     box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+   70% {
+    
+      box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+   }
+   100% {
+     
+     box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
 .light-blue-block {
     border-radius: 4px;
     padding: 16px 24px;
