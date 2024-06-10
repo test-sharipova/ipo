@@ -71,6 +71,7 @@
             &__item {
                 margin: 4px;
             }
+            
         }
     }
 }
@@ -80,7 +81,7 @@
         min-width: 120px;
     }
     .btn_main, .btn_login, .btn_transparent {
-        height: 38px;
+        height: 42px;
         padding: 2px 16px;
     }
    .title {
@@ -180,6 +181,17 @@
             }
             &__img {
                 min-height: 450px;
+                padding: 0;
+                &-text {
+                    padding: 32px;
+                    margin-bottom: 0;
+                    // background-color: rgba(40, 71, 115, .5);
+                    background-image: linear-gradient(rgba(40, 71, 115, 0) 0%, rgba(40, 71, 115, .8) 50%);
+                }
+                .btn_white {
+                    margin: 0 auto 32px;
+                    width: calc(100% - 64px);
+                }
             }
         }
         &__learn {
@@ -268,6 +280,7 @@
         &__quest {
             padding: 60px 0;
         }
+       
         
     }
     .teachers {
@@ -513,6 +526,101 @@
                 padding: 16px;
             }
         }
+        &__programm {
+            &__info {
+                flex-direction: column;
+                gap: 16px;
+                margin-top: 24px;
+            }
+        }
+        &__plan {
+            &__wrapper {
+                padding: 12px 12px 160px;
+                background: url(../img/about-plan-bg.jpg) no-repeat bottom left / cover;
+            }
+            &__content {
+                max-width: 100%;
+            }
+            &__img {
+                width: 58%;
+            }
+        }
+        &__docs {
+            &__item {
+                padding: 16px;
+            }
+            &__wrapper {
+                gap: 8px;
+                grid-template-columns: 1fr;
+            }
+            .btn_main {
+                line-height: 150%;
+                height: 56px;
+            }
+        }
+        &__licens {
+            &__slider {
+                &-for {
+                    .slick-next {
+                        right: 0;
+                    }
+                }
+            }
+        }
+        &__treb {
+            &__wrapper {
+                gap: 20px;
+            }
+            &__item {
+                padding: 16px;
+            }
+        }
+        &__poryadok {
+            .slick-dots {
+                display: flex;
+                list-style: none;
+                gap: 4px;
+                padding: 0;
+                justify-content: center;
+                button {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 100%;
+                    font-size: 1px;
+                    color: transparent;
+                    border: none;
+                    background-color: var(--blue-light);
+                    transition: background-color .3s;
+                }
+                .slick-active {
+                    button {
+                        background-color: var(--accent);
+                    }
+                }
+    
+            }
+        }
+        &__rews {
+            &__wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+        &__quest {
+            background: #fff;
+            &__form {
+                padding: 0;
+                &__wrapper {
+                    grid-template-columns: 1fr;
+                    gap: 0px;
+                }
+            }
+        }
+        &__akt {
+            padding-top: 60px;
+            .about__learn__accord {
+                margin-top: 24px;
+            }
+        }
     }
     .teachers {
         .slick-dots {
@@ -529,6 +637,7 @@
                 color: transparent;
                 border: none;
                 background-color: var(--blue-light);
+                transition: background-color .3s;
             }
             .slick-active {
                 button {
@@ -557,10 +666,11 @@
     }
     .about {
         &__form {
+            background: #fff;
             &__wrapper {
                 display: grid;
                 grid-template-columns: 1fr;
-                padding: 16px;
+                padding: 0;
                 
             }
             
@@ -581,7 +691,71 @@
 }
 .pay {
     .wrapper_start {
-        overflow-x: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
     }
+}
+.order {
+    padding-top: 0;
+    background: #fff;
+    &__item {
+        padding: 0;
+        .title {
+            font-size: 20px;
+        }
+        .wrapper {
+            align-items: stretch;
+        }
+    }
+}
+.assessments {
+    &__percent {
+        gap: 12px;
+    }
+    &__item2 {
+        padding: 12px;
+    }
+    &__slider {
+        .slick-arrow {
+            top: 80px;
+        }
+    }
+}
+.programm {
+    &__item {
+        &-top {
+            padding: 16px;
+        }
+        &-bottom {
+            padding: 16px;
+            .wrapper {
+                flex-wrap: wrap;
+            }
+        }
+    }
+    &__text {
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 20px;
+        }
+        
+    }
+    .old-price {
+        text-align: left;
+    }
+}
+.modal {
+    z-index: 10;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding-inline: 16px;
 }
 }

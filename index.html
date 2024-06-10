@@ -37,7 +37,7 @@
                         <a href="tel:+78005551294" class="header__number">+7 (800) 555-12-94</a>
                         <a href="tel:+74994724867" class="header__number">+7 (499) 472-48-67</a>
                       </div>
-                      <button type="button" class="btn_main">Заказать звонок</button>
+                      <button type="button" class="btn_main consult">Заказать звонок</button>
                 </div>
                 <div class="header__wrap-bottom">
                     <nav>
@@ -52,7 +52,7 @@
                                     <a href="tel:+78005551294" class="header__number">+7 (800) 555-12-94</a>
                                     <a href="tel:+74994724867" class="header__number">+7 (499) 472-48-67</a>
                                 </div>
-                                <button type="button" class="btn_main">Заказать звонок</button>
+                                <button type="button" class="btn_main consult">Заказать звонок</button>
                                 <button type="button" class="btn_login">СДО</button>
                             </li>
                         </ul>
@@ -114,7 +114,7 @@
                                 <span>Яндекс PAY</span> Поступайте сейчас - платите потом! 
                             </div>
                         </div>
-                        <button class="btn_transparent">Проконсультироваться</button>
+                        <button class="btn_transparent consult">Проконсультироваться</button>
                     </div>
                 </div>
                 
@@ -152,7 +152,7 @@
            
                 <div class="tabs">
   
-                   <div class="container">
+                   <div class="container container_pr0">
                     <ul class="tabs__caption">
                         <li class="active">Описание</li>
                         <li >Учебный план</li>
@@ -260,7 +260,7 @@
                                     <p class="about__career__img-text">
                                         Поступите и получите бесплатно консультации и обучение продвижение стоимостью до 20 000 ₽
                                     </p>
-                                    <button type="button" class="btn_white">Проконсультироваться</button>
+                                    <button type="button" class="btn_white consult">Проконсультироваться</button>
                                 </div>
                             </div>
                            </div>
@@ -533,7 +533,7 @@
                                             <div class="phone__wrap">
                                                 <input type="text" class="form__input phone">
                                             </div>
-                                            <input type="email" class="form__input" placeholder="Email*">
+                                            <input type="email" class="form__input" placeholder="Email*" required>
                                             <div class="wrapper_start">
                                                 <label for="policy-check2" class="policy-check">
                                                     <input type="checkbox" id="policy-check2" class="policy-check-input" required>
@@ -682,7 +682,7 @@
                                                 <a href="#">Скачать</a>
                                             </div>
                                         </div>
-                                        <div class="about__license__item">
+                                        <div class="about__licens__item">
                                             <div class="about__licens__item__title">
                                                 Самостоятельно проверить лицензию в реестре Рособрнадзора
                                             </div>
@@ -953,7 +953,7 @@
                                             <div class="phone__wrap">
                                                 <input type="text" class="form__input phone">
                                             </div>
-                                            <input type="email" class="form__input" placeholder="Email*">
+                                            <input type="email" class="form__input" placeholder="Email*" required>
                                         </div>
                                         <div>
                                             <textarea name="" id="" class="form__textarea" placeholder="Текст вопроса"></textarea>
@@ -1141,7 +1141,7 @@
                             <div class="phone__wrap">
                                 <input type="text" class="form__input phone">
                             </div>
-                            <input type="email" class="form__input" placeholder="Email*">
+                            <input type="email" class="form__input" placeholder="Email*" required>
                             <div class="wrapper_start">
                                 <label for="policy-check4" class="policy-check">
                                     <input type="checkbox" id="policy-check4" class="policy-check-input" required>
@@ -1287,13 +1287,13 @@
                         <form action="#" class="about__form__form">
                             <fieldset>
                                 <label class="pay-option__label" for="pay-option-cons">
-                                    <input class="pay-option__input" type="radio" name="pay-option" id="pay-option-cons" value="Request for consultation">
+                                    <input class="pay-option__input" type="radio" name="pay-option" id="pay-option-cons" value="Оставлена  заявка на бесплатную консультацию">
                                     <span class="pay-option__mark">Оставить заявку на бесплатную консультацию</span>
                                     
                                 </label>
                                 
                                 <label class="pay-option__label" for="pay-option-pay">
-                                    <input class="pay-option__input" type="radio" name="pay-option" id="pay-option-pay" value="Pay for the training program">
+                                    <input class="pay-option__input" type="radio" name="pay-option" id="pay-option-pay" value="Оплатить программу обучения">
                                     <span class="pay-option__mark">Оплатить программу обучения</span>
                                    
                                 </label>
@@ -1302,16 +1302,16 @@
                             <p class="heading">
                                 Заполните контактные данные
                             </p>
-                            <input type="text" placeholder="ФИО*" class="form__input" required="">
+                            <input type="text" placeholder="ФИО*" class="form__input" required>
                             <div class="phone__wrap">
                                 <input type="text" class="form__input phone">
                             </div>
-                            <input type="email" class="form__input" placeholder="Email*">
+                            <input type="email" class="form__input" placeholder="Email*" required>
                             <input type="text" class="form__input" placeholder="Промокод">
                             <textarea name="" id="" class="form__textarea" placeholder="Сообщение"></textarea>
                             <div class="wrapper_start">
                                 <label for="policy-check1" class="policy-check">
-                                    <input type="checkbox" id="policy-check1" class="policy-check-input" required="">
+                                    <input type="checkbox" id="policy-check1" class="policy-check-input" required>
                                     <span class="policy-check-mark"></span>
                                 </label>
                                 
@@ -1468,6 +1468,30 @@
             </div>
         </section>
     </main>
-    
+    <div class="overlay"></div>
+    <div class="modal modal-consult">
+        <button type="button" class="modal__close"></button>
+        <p class="heading mb_32">
+            Оставьте свои данные, и мы перезвоним Вам в ближайшее время
+        </p>
+        <form action="#" class="about__form__form">
+            <input type="text" placeholder="ФИО*" class="form__input" required="">
+            <div class="phone__wrap">
+                <input type="text" class="form__input phone">
+            </div>
+            <input type="email" class="form__input" placeholder="Email*" required="">
+            <div class="wrapper_start">
+                <label for="policy-check6" class="policy-check">
+                    <input type="checkbox" id="policy-check6" class="policy-check-input" required="">
+                    <span class="policy-check-mark"></span>
+                </label>
+                
+                <p class="policy__text">
+                    Нажимая на кнопку, Вы соглашаетесь с&nbsp;<a href="#">политикой в области обработки и защиты персональных данных Института профессионального образования».</a>
+                </p>
+            </div>
+            <button type="submit" class="btn_main">Отправить</button>
+        </form>
+    </div>
 </body>
 </html>

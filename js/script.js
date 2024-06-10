@@ -71,8 +71,8 @@ $('.about__poryadok__slider').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        
-        dots: false
+        arrows: false,
+        dots: true
       }
     },
     
@@ -127,4 +127,12 @@ $('.assessments__slider').slick({
   infinite: true,
   slidesToShow: 1,
   
+});
+
+//модальное окно
+$('.consult').on('click', function(){
+  $('.overlay, .modal-consult').fadeIn();
+});
+$('.modal__close').on('click', function(){
+  $('.overlay, .modal').fadeOut();
 });
