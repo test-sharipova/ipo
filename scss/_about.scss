@@ -143,7 +143,7 @@
     }
     &__career {
         background: var(--accent);
-        padding: 104px 0 105px;
+        padding: 104px 0 112px;
         .title {
             text-align: center;
             color:#fff;
@@ -169,7 +169,7 @@
             border-radius: 4px;
             background: #bfd6f4;
             padding: 24px 32px;
-            margin-bottom: 32px;
+            margin-bottom: 29px;
             position: relative;
             .heading {
                 margin-bottom: 12px;
@@ -265,6 +265,7 @@
             details {
                 margin-bottom: 24px;
                 background-color: #fff;
+                border-radius: 4px;
             }
             details[open] {
                 summary {

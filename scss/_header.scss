@@ -48,6 +48,11 @@ header {
             padding: 12px 48px;
             margin: 0;
             display: block;
+            border: 1px solid transparent;
+            &:focus {
+                border: 1px solid var(--accent);
+                outline: 3px solid var(--blue-light);
+            }
         }
         &:before {
             content: '';
